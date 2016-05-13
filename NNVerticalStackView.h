@@ -2,7 +2,6 @@
 //  NNVerticalStackView.h
 //
 //  Created by Dinesh Kumar on 04/11/15.
-//  Copyright © 2015 Infoedge India Pvt. Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
