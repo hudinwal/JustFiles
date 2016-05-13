@@ -172,23 +172,3 @@ CGFloat const NNStackViewContentHeightMetric = -1;
 }
 
 @end
-
-//-----------------------------------------------------------------//
-#pragma mark Alternate Coloring Of The vertical stack Items
-//-----------------------------------------------------------------//
-
-#define VIEW_BACKGROUND_COLOR [UIColor colorWithRed:245.f/255 green:247.f/255 blue:250.f/255 alpha:1.f]
-
-@implementation NNVerticalStackView(NNVerticalStackColoring)
-
--(void)insertStackItemWithColouredBackground:(UIView *)stackItem{
-    
-    if (_stackViewItems.count % 2 != 0)
-        stackItem.backgroundColor = VIEW_BACKGROUND_COLOR;
-    else
-        stackItem.backgroundColor = [UIColor whiteColor];
-    
-    [self insertStackItem:stackItem atIndex:_stackViewItems.count withItemHeight:NNStackViewContentHeightMetric];
-}
-
-@end
