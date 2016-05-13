@@ -49,17 +49,3 @@ extern CGFloat const NNStackViewContentHeightMetric;
 -(void)removeAllStackItems;
 
 @end
-
-//-----------------------------------------------------------------//
-#pragma mark - Alternate Coloring Of The vertical Stack Items
-//-----------------------------------------------------------------//
-
-@interface NNVerticalStackView (NNVerticalStackColoring)
-
-// Adds a stack item at the bottom of the stack, height if items is generated
-// by its content
-// Add Background Color accordance of stackitem is added at Even or Odd index
--(void)insertStackItemWithColouredBackground:(UIView *)stackItem;
-
-
-@end
